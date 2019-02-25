@@ -32,10 +32,6 @@ Your solution should be capable of displaying any type of notification message (
 Here are some UI examples from a solution to this challenge:
 ![Notification Example](https://cdn.rawgit.com/tylerclearmetal/notices/abf2791e/example.gif)
 
-### Example Notification
-Here are some UI examples from a solution to this challenge:
-![Notification Example](https://cdn.rawgit.com/tylerclearmetal/notices/abf2791e/example.gif)
-
 ## My solution
 ### Store
 I created a notification store which contains two thunks: clearNotification and createNotification. When a notification is created, clearNotification is called on a timeout of 5000ms. If a new notification is created, the old timeout is cleared and reset to a new 5000ms timeout.

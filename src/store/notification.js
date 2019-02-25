@@ -19,7 +19,7 @@ export const createNotification = (content, type) => (dispatch, getState) => {
         clearTimeout(oldTimeout);
     }
 
-    const timeout = setTimeout(() => dispatch({ type: NOTIFICATION_CLEAR, payload: { datetime } }), 5000)
+    const timeout = setTimeout(() => dispatch({ type: NOTIFICATION_CLEAR }), 5000)
     dispatch({ type: NOTIFICATION_CREATE, payload: { content, type, timeout } })
 }
 

@@ -44,6 +44,9 @@ I also added a Notification component which is connected to the notification red
 
 I used the styled-components library for the styling of the Notification component.
 
+### Code-Style
+Some of the code style is not standard (i.e. missing semicolons), but I tried to adhere to the code style of the existing application as much as possible. I thought this would be better than trying to enforce my own personal style preferences on all the existing code. 
+
 # Create React App
 Below you will find some information on how to perform common tasks within CRA. This is here purely for reference and shouldn't be necessary to complete the challenge.<br><br>
 You can find the most recent version of this guide [here](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md).

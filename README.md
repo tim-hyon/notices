@@ -37,12 +37,12 @@ Here are some UI examples from a solution to this challenge:
 I created a notification store which contains two thunks: clearNotification and createNotification. When a notification is created, clearNotification is called on a timeout of 5000ms. If a new notification is created, the old timeout is cleared and reset to a new 5000ms timeout.
 
 ### State
-Notification state has three values: content, type, and timeout. Content is the message of the notification. It is either the result of the succeful case change, or the error message of a bad request. Type represents the three supported notification types: loading, success, and error. Timeout is a timeout function to clear the existing notification after 5000ms. This timeout is stored in state so it can be cleared and reset when new notifications are created (This way old timeouts don't remove new notifications).
+Notification state has three values: content, type, and timeout. Content is the message of the notification. It is either the result of the successful case change, or the error message of a bad request. Type represents the three supported notification types: loading, success, and error. Timeout is a timeout function to clear the existing notification after 5000ms. This timeout is stored in state so it can be cleared and reset when new notifications are created (This way old timeouts don't remove new notifications).
 
 ### Component
 I also added a Notification component which is connected to the notification redux store. This component will render the notification content, and style the notification (color) based on the type. There is also a close button with a handler which runs the clearNotification thunk. This clears the notification's timeout function and also closes the notification right away.
 
-I used the styled-components library for the styling of the Notification component;
+I used the styled-components library for the styling of the Notification component.
 
 # Create React App
 Below you will find some information on how to perform common tasks within CRA. This is here purely for reference and shouldn't be necessary to complete the challenge.<br><br>
